@@ -24,7 +24,7 @@ import shutil
 # shutil.rmtree("path/to/new_directory") # removes non-empty directory (use with caution)
 
 # Rename a file or directory
-os.rename("abcz.txt", "normal.txt")
+# os.rename("abcz.txt", "normal.txt")
 
 # Check if a file or directory exists
 # if os.path.exists("my_file.txt"):
