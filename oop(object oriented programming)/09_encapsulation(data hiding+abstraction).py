@@ -77,3 +77,58 @@
 # WHICH ARE METHODS THAT HAVE NO IMPLEMENTATION AND MUST BE IMPLEMENTED BY SUBCLASSES.
 
 # EVERY ABSTRACT CLASS IS A CLASS BUT NOT EVERY CLASS IS AN ABSTRACT CLASS.
+
+
+
+
+
+# program 1:
+class bank:
+    def data(self):
+        self.accountno=input("enter your account number ")
+        self.balance=int(input("enter your bank balance "))
+    def __task(self):
+        operation=input("""enter your task deposit , withdraw ,display balance press d to dposit
+        press w to withdraw and press b to display balance """)
+        if operation=="d":
+            self.dep=int(input("enter amount to deposit"))
+            print("amount deposited successfully")
+            self.balance=self.balance+self.dep
+            print("your latest balance is",self.balance )  
+        elif operation=="w":
+            self.wit=int(input("enter amount to with draw"))
+            print("amount withdrawed successfully")
+            self.balance=self.balance-self.wit
+            print("your latest balance is",self.balance )  
+        else :
+            print("your latest balance is",self.balance )  
+b=bank()
+b.data()
+b._bank__task()
+
+
+# from abc import ABC, abstractmethod
+# import math
+
+# class Shape(ABC):
+
+#     @abstractmethod
+#     def Area(self):
+#         pass
+
+
+# class Circle(Shape):
+
+#     def __init__(self, radius):
+#         self.radius = radius
+
+#     def Area(self):
+#         return math.pi * self.radius * self.radius
+
+
+# r = float(input("Enter radius: "))
+
+# c = Circle(r)
+
+# print("Area of Circle =", c.Area())
+            
