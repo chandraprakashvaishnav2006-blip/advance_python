@@ -17,7 +17,7 @@ class student:
         else:
             print("You are not eligible for the exam.")
     def write(self):
-        with open("DATA.csv",'w') as f:
+        with open("DATA.csv",'w') as f: 
             f.write(f"name={self.name}\n")
             f.write(f"age={self.age}\n")
             f.write(f"roll no={self.roll_no}\n")
