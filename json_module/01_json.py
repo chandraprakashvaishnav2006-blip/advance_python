@@ -3,9 +3,9 @@ data={"v":"k","b":"m","c":"n"}
 json_object=j.dumps(data,indent=4)
 # indent keyword is used to show data in proper format
 print(json_object)
-# f=open("datam.json", "r+")
-# # f.write(json_object)
-# k=f.read()
+f=open("datam.json", "r+")
+f.write(json_object)
+k=f.read()
 # p=j.loads(k)
 # print(k)
 # print(p)    
